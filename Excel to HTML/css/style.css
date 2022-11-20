@@ -1,0 +1,21 @@
+/* * {
+    padding: 0px;
+    margin: 0px;
+} */
+.container {
+    /* margin: 0px auto; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid green;
+    font-size: 13px; 
+    }
+thead th {
+    font-weight: bold;
+    font-size: 14px;
+    }
+table td,thead th {
+    border: 1px solid black;
+    }
+.lightgrey {
+    background-color: lightgrey;
+    }

@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* outline: dotted green 1px; */
+}
+.container {
+    margin: 30px auto;
+    width: 800px;
+    height: 200px;
+}
+.bookmark {
+    margin: 0px auto;
+    width: 800px;
+    /* height: 200px; */
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+p, #select, input{
+    text-align: center;
+    padding: 5px;
+}
+table, td, th {
+    border: 1px solid;
+  }
+td{
+    padding: 5px;
+}
+.idCon {
+    width: 250px;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 15px;
+  }

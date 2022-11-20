@@ -1,0 +1,44 @@
+/* This is for the container result.php */
+* {
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px dotted green; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #5aa897;
+    }
+.container_result {
+    width: 500px;
+    height: 580px;
+    margin: 0px auto;
+    border: 2px solid lightgray;
+    margin-top: 25px;
+    background-color: #f8a488;
+    color: #f8f5f1;
+    border-radius: 10px;
+    }
+form {
+        padding: 20px;
+        text-align: left;
+        font-size: 15px;
+        }
+.text_entry {
+    resize: none;
+    border: none;
+    }
+.result, .text_entry{
+    border: none;
+    color: #fce2db;
+}
+label {
+    padding: 5px 50px 5px 5px;
+    margin: 5px;
+    }
+section {
+    width: 500px;
+    height: 150px;
+    background-color: #45526C;
+    }
+
+.result {
+    margin: 10px 330px 15px 5px; 
+}

@@ -1,0 +1,100 @@
+/* This style is for the wall demo success.php */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px dotted green; */
+    font-family: sans-serif;
+    
+}
+.container1 {
+    padding: 0px 10px 10px 10px;
+    width: auto;
+    height:auto;
+    border: 1px solid black;
+    background-color: #6E85B7;
+}
+header ul {
+    background-color: #bdccec;
+    margin: 5px;
+}
+header ul li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    
+}
+input {
+    font-size: 18px;
+    padding-left: 5px;
+}
+.left_side {
+    position: relative;
+    left: 850px;
+}
+main {
+    margin: 5px;
+    /* background-color: #B2C8DF; */
+}
+h1,h2 {
+    /* color: #1C3879; */
+    padding: 10px;
+}
+.content {
+    text-align: justify;
+    margin: 5px 10px 5px 10px;
+}
+p {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+textarea {
+    width: 600px;
+    height: 80px;
+    padding: 5px;
+}
+form input[type='submit'] {
+    margin-top: 5px;
+    display: block;
+    background-color: #4a76d6;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+form input[type='submit']:hover {
+    background-color: #C4D7E0;
+    color: blue;
+}
+h3, p{
+    margin-left: 25px;
+    /* font-size: 16px; */
+}
+h3, h2{
+    font-size: 18px;
+}
+form.reply_form {
+    margin-left: 30px;
+}
+section {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 10px;
+}
+.error {
+    font-size: 11px;
+    text-align: center;
+    color: red;
+    height: 10px;
+    margin: 1px 20px;
+    background-color: #C4D7E0;
+}
+.success {
+    font-size: 11px;
+    text-align: center;
+    color: green;
+    height: 10px;
+
+    background-color: #C4D7E0;
+}
+

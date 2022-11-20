@@ -1,0 +1,41 @@
+MySQL Troubleshooting
+Objectives:
+To explore possible errors that can be encountered
+To be familiar in Mysql errors and its workaround
+Play around with your MySQL connection and produce errors each for the following: authentication, authorization, network. Have a screenshot and provide the error numbers and details in a .txt file, as well and tell us how to fix it.
+
+Upload your work
+
+Connection errors
+
+1 - define('DB_HOST', 'localhost:330');  // 1. If the local host is incorrect or if the port is change. Make sure that the user check correctly the connections
+
+Errors - 
+Fatal error: Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php:10 Stack trace: #0 C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php(10): mysqli->__construct('localhost:330', 'root', '', 'connection') #1 {main} thrown in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php on line 10
+
+2 - define('DB_USER', 'roots'); // 2. default user root misspelled or change in mysql user. You can use the default username in mysql. Make it sure its correct
+
+Errors -
+Fatal error: Uncaught mysqli_sql_exception: Access denied for user 'roots'@'localhost' (using password: NO) in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php:10 Stack trace: #0 C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php(10): mysqli->__construct('localhost:3307', 'roots', '', 'connection') #1 {main} thrown in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php on line 10
+
+3 - define('DB_PASS', 'xx'); // 3. If password not set or password is set but incorrect input. 
+
+Errors - 
+Fatal error: Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php:10 Stack trace: #0 C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php(10): mysqli->__construct('localhost:3307', 'root', 'xx', 'connection') #1 {main} thrown in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php on line 10
+
+4 - define('DB_DATABASE', 'connectionss'); // 4. Database 'connection' spell is correct
+
+Errors -
+Fatal error: Uncaught mysqli_sql_exception: Unknown database 'connectionssss' in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php:10 Stack trace: #0 C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php(10): mysqli->__construct('localhost:3307', 'root', '', 'connectionssss') #1 {main} thrown in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php on line 10
+
+5 - $connection = new mysqli(DB_HOST, DB_USER,  DB_DATABASE); // 5. Set to new variable. make sure that the define name is correct.
+
+Errors -
+Fatal error: Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php:10 Stack trace: #0 C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php(10): mysqli->__construct('localhost:3307', 'root', 'connection') #1 {main} thrown in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php on line 10
+
+6 - $users = $connection->query("SELECT * FROM test1s"); // 6. correct querrying for database.
+
+Errors - 
+
+Fatal error: Uncaught mysqli_sql_exception: Table 'connection.test1s' doesn't exist in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php:18 Stack trace: #0 C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php(18): mysqli->query('SELECT * FROM t...') #1 {main} thrown in C:\xampp\htdocs\PHP_Track\PHP with MySQL\connecting\new-connection.php on line 18
+

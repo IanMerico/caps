@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* outline: 2px dotted green; */
+    }
+.container {
+    width: 1020px;
+    height: 610px;
+    margin: 0px auto;
+    padding-top: 50px;
+    
+    }
+table {
+    margin-left: 15px;
+}
+table th {
+    padding: 5px;
+}
+table, td {
+    font-size: 17px;
+    padding: 2px;
+    border: 1px solid black;
+}
+.lightgrey {
+    background-color: lightgrey;
+}

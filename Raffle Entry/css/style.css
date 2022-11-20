@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px green dotted; */
+}
+.container {
+    margin: 0px auto;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+.processraffle {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+h1 {
+    margin: 20px;
+}
+p, input {
+    margin: 10px;
+    font-size:18px;
+}
+#success_h1 {
+    border: 1px solid black;
+    width: 500px;
+    background:  green;
+    margin: 0px auto;
+    color: #c7c3c3;
+}
+
+
+/* Success.php css style */
+
+table {
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+}
+th, td {
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid black;
+}
+tr:hover {
+    background-color: coral;
+}
+.dlt input {
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+   
+}
+Button:hover {
+    background-color: #f34545;
+    color: #ddd;
+}
+
